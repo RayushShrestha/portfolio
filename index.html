@@ -345,17 +345,29 @@ I’m always open to QA, automation, or freelance opportunities.
   </a>
 </div>
 
-<div class="mt-8">
+<div class="mt-4 flex justify-end">
   <a href="assets/docs/Rayush_Shrestha_CV.pdf" download
-     class="px-6 py-4 bg-blue-900 border border-blue-800 rounded-xl transition-all duration-500 hover:scale-105 hover:bg-blue-800 hover:border-blue-500 hover:text-white">
+     class="px-6 py-4 bg-blue-900 border border-blue-800 rounded-xl text-white font-semibold
+            transform transition-all duration-500 hover:scale-105 hover:bg-blue-800 hover:border-blue-500
+            hover:shadow-lg hover:shadow-blue-500/50 animate-bounce-slow">
     📄 Download CV
   </a>
 </div>
 
+<style>
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  .animate-bounce-slow {
+    animation: bounce-slow 1s infinite;
+  }
+</style>
+
 </div>
 </section>
 
-<footer class="py-8 text-center text-zinc-600 border-t border-zinc-800/50">
+<footer class="py-8 px-6 text-left text-zinc-600 border-t border-zinc-800/50">
 © 2026 Rayush Shrestha
 </footer>
 <script>
