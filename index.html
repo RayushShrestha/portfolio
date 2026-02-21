@@ -18,9 +18,9 @@
 <!-- NAVIGATION -->
 <nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800/50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <span class="text-lg font-semibold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-      RS
-    </span>
+    <a href="#" class="text-lg font-semibold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+      Rayush Shrestha
+    </a>
     <div class="flex items-center gap-8">
       <a href="#work" class="text-sm text-zinc-400 hover:text-white transition">Projects</a>
       <a href="#about" class="text-sm text-zinc-400 hover:text-white transition">About</a>
@@ -243,6 +243,8 @@
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">API Testing</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Automation (Selenium)</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Load Testing</span>
+            <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Regression Testing</span>
+            <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Functional and non Functional Testing</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Performance Testing</span>
           </div>
         </div>
@@ -256,6 +258,9 @@
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">TestNG</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Postman</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">JMeter</span>
+             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Eclipse</span>
+              <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg"> VS code</span>
+               <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Intellij IDEA</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Cucumber</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Git</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Jira</span>
@@ -268,7 +273,7 @@
           </h3>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Highly Adaptable</span>
-            <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Communication</span>
+            <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Effective Communication</span>
             <span class="px-3 py-1.5 text-sm bg-zinc-800 rounded-lg">Agile Workflow</span>
           </div>
         </div>
@@ -354,6 +359,17 @@ I’m always open to QA, automation, or freelance opportunities.
 <footer class="py-8 text-center text-zinc-600 border-t border-zinc-800/50">
 © 2026 Rayush Shrestha
 </footer>
-
+<script>
+  // Smooth scroll to the top when "Rayush Shrestha" is clicked
+  document.querySelector('a[href="#"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
 </body>
 </html>
