@@ -87,6 +87,17 @@
         </a>
 
         <div class="flex gap-3">
+          <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
            <!-- GitHub -->
   <a href="https://github.com/rayushshrestha"
      target="_blank"
