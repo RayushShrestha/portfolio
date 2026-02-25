@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rayush Shrestha | QA Engineer</title>
+<head>
+  <title>Rayush Shrestha | QA Engineer</title>
+  <link rel="icon" type="image/jpg" href="assets/img/profile_pic.png">
+</head>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- PRELOADER -->
@@ -44,6 +47,17 @@
     </div>
   </div>
 </nav>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
 
 <!-- HERO -->
 <section class="pt-32 pb-20 px-6">
@@ -361,40 +375,27 @@ I’m always open to QA, automation, or freelance opportunities.
   </a>
 </div>
 
-<div class="mt-5 flex justify-end">
+<div id="cvButton" class="fixed bottom-6 right-6 z-50 animate-bounce-slow">
   <a href="assets/docs/Rayush_Shrestha_CV.pdf" download
      class="px-6 py-4 bg-blue-900 border border-blue-800 rounded-xl text-white font-semibold
-            transform transition-all duration-500 hover:scale-105 hover:bg-blue-800 hover:border-blue-500
-            hover:shadow-lg hover:shadow-blue-500/50 animate-bounce-slow">
+            transition-all duration-500 hover:scale-105 hover:bg-blue-800 hover:border-blue-500
+            hover:shadow-lg hover:shadow-blue-500/50 cursor-pointer">
     📄 Download CV
   </a>
 </div>
 
+
 <style>
-  @keyframes bounce-slow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY();
   }
-  .animate-bounce-slow {
-    animation: bounce-slow 1s infinite;
+  50% {
+    transform: translateY(-15px);
   }
-  @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
-
-@keyframes ping-slow {
-  0% { transform: scale(1); opacity: 0.4; }
-  70% { transform: scale(1.6); opacity: 0; }
-  100% { transform: scale(1.6); opacity: 0; }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 3s linear infinite;
-}
-
-.animate-ping-slow {
-  animation: ping-slow 2s ease-out infinite;
+.animate-bounce-slow {
+  animation: bounce-slow 1.8s ease-in-out infinite;
 }
 </style>
 
